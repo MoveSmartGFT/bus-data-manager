@@ -2,7 +2,12 @@ package com.busDataManager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.modulith.Modulithic;
 
+@Modulithic(
+//		systemName = "Bus Dataset Manager",
+//		sharedModules =
+)
 @SpringBootApplication
 public class Application {
 
