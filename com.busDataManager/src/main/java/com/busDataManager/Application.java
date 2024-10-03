@@ -5,8 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.modulith.Modulithic;
 
 @Modulithic(
-//		systemName = "Bus Dataset Manager",
-//		sharedModules =
+		systemName = "Bus Dataset Manager",
+		sharedModules = {"com.busDataManager.core"},
+		useFullyQualifiedModuleNames = true
 )
 @SpringBootApplication
 public class Application {

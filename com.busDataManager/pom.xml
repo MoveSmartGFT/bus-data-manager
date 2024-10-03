@@ -78,6 +78,12 @@
 			<artifactId>jmolecules-starter-ddd</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.jmolecules.integrations</groupId>
+			<artifactId>jmolecules-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -111,6 +117,66 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.12</version>
+				<executions>
+					<!-- Configurar el agente de JaCoCo -->
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+
+					<!-- Generar el informe HTML -->
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<!-- Configurar la ubicación y formato del informe -->
+							<outputDirectory>${project.build.directory}/site/jacoco</outputDirectory>
+							<formats>
+								<format>HTML</format>
+							</formats>
+						</configuration>
+					</execution>
+					<!-- Verificar cobertura solo para INSTRUCTION y BRANCH -->
+					<execution>
+						<id>post-unit-test</id>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<!-- Configurar el elemento BUNDLE para verificar -->
+									<element>BUNDLE</element>
+									<limits>
+										<!-- Verificar cobertura de instrucciones (INSTRUCTION) -->
+										<limit>
+											<counter>INSTRUCTION</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>1.0</minimum> <!-- Requiere 100% de cobertura -->
+										</limit>
+										<!-- Verificar cobertura de ramas (BRANCH) -->
+										<limit>
+											<counter>BRANCH</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>1.0</minimum> <!-- Requiere 100% de cobertura -->
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
