@@ -25,5 +25,4 @@ class ArchitectureTests {
 		modules.forEach(System.out::println);
 		modules.verify();
 	}
-
 }

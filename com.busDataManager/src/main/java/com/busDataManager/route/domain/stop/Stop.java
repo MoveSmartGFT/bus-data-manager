@@ -9,5 +9,4 @@ public class Stop {
     @Identity
     private String id;
 
-
 }
