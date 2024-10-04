@@ -1,4 +1,6 @@
 package com.busDataManager.route.domain.route;
 
-public interface RouteRepository {
+import org.springframework.data.repository.ListCrudRepository;
+
+public interface RouteRepository extends ListCrudRepository<Route, String>{
 }
