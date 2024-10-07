@@ -10,4 +10,8 @@ public class Schedule {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private Integer frequencyInMinutes;
+
+    public Schedule(String typeOfDay) {
+        this.typeOfDay = typeOfDay;
+    }
 }
