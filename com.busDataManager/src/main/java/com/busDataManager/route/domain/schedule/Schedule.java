@@ -10,11 +10,4 @@ public class Schedule {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private Integer frequencyInMinutes;
-
-    public Schedule(String typeOfDay, LocalDateTime startTime, LocalDateTime endTime, Integer frequencyInMinutes) {
-        this.typeOfDay = typeOfDay;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.frequencyInMinutes = frequencyInMinutes;
-    }
 }
