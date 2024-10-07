@@ -17,8 +17,4 @@ public class Schedule {
         this.endTime = endTime;
         this.frequencyInMinutes = frequencyInMinutes;
     }
-
-    public String getTypeOfDay() {
-        return typeOfDay;
-    }
 }
