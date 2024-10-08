@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f749332d-8fc0-47cd-b258-7fa4dc1b2204" name="Changes" comment="Workflow test #2 schedule constructor and getter">
+      <change beforePath="$PROJECT_DIR$/../.github/workflows/coverage-check.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/bus-data-manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/com/busDataManager/ArchitectureTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/java/ArchitectureTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DeniseGarridoGFT&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MoveSmartGFT/bus-data-manager.git&quot;,
+    &quot;accountId&quot;: &quot;e95925a3-6ad9-45df-978f-9f2cab002e2f&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2msswtMsArkouQ6X877fITIW8hW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ArchitectureTests.executor": "Run",
+    "Maven.com.busDataManager [clean,install...].executor": "Run",
+    "Maven.com.busDataManager [clean,test].executor": "Run",
+    "Maven.com.busDataManager [clean,verify].executor": "Run",
+    "Maven.com.busDataManager [jacoco:report].executor": "Run",
+    "Maven.com.busDataManager [test,verify].executor": "Run",
+    "Maven.com.busDataManager [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#7 on POC__JacocoReport",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/degm/Documents/WorkShop/bus-data-manager/com.busDataManager/src/main/java/com/busDataManager",
+    "last_opened_file_path": "C:/Users/degm/Documents/WorkShop/bus-data-manager",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\degm\Documents\WorkShop\bus-data-manager\src\test" />
+      <recent name="C:\Users\degm\Documents\WorkShop\bus-data-manager\com.busDataManager\.github\workflows" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\degm\Documents\WorkShop\bus-data-manager\src\test\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.busDataManager" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+      <command value=" mvn clean install" />
+      <command value="mvn clean install install:install" />
+      <command value="mvn test" />
+      <command value="mvn jacoco:report" />
+      <command value="mvn test verify" />
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ArchitectureTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bus-data-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.busDataManager.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Arc" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArchitectureTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f749332d-8fc0-47cd-b258-7fa4dc1b2204" name="Changes" comment="" />
+      <created>1727876859286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727876859286</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Workflow started">
+      <option name="closed" value="true" />
+      <created>1728309557943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728309557943</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Workflow test #1">
+      <option name="closed" value="true" />
+      <created>1728312849217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728312849217</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Workflow test #1">
+      <option name="closed" value="true" />
+      <created>1728313041924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728313041924</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Workflow test #2 schedule constructor">
+      <option name="closed" value="true" />
+      <created>1728314880309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728314880309</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add JPA repository" />
+    <MESSAGE value="Workflow started" />
+    <MESSAGE value="Workflow test #1" />
+    <MESSAGE value="Workflow test #2 schedule constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workflow test #2 schedule constructor" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bus_data_manager$ArchitectureTests.ic" NAME="ArchitectureTests Coverage Results" MODIFIED="1728382731829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.busDataManager.core.*</FILTER>
+    </SUITE>
+  </component>
+</project>
