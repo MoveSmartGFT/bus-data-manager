@@ -29,10 +29,13 @@ public class StopManagementUseCaseImplTest {
 
     Stop stop = Instancio.create(RouteInstancioModels.STOP_MODEL);
 
+    //-----------------------------------------------------------------------------------------------------------------
+    //CREATE METHOD
+
     @Test
     @DisplayName("GIVEN a stop to create THEN returns stop object and status 201")
     void testStopCreate() {
-        when(stopRepository.existsById(stop.getId())).thenReturn(true);
+        when(stopRepository.existsById(stop.getId())).thenReturn(false);
         when(stopRepository.insert(stop)).thenReturn(stop);
 
         Stop stopCreated = stopManagementUseCase.create(stop);
@@ -43,7 +46,7 @@ public class StopManagementUseCaseImplTest {
     @Test
     @DisplayName("GIVEN a stop to create WHEN already exists THEN returns an exception and status 409")
     void testStopCreateAlreadyExists() {
-        when(stopRepository.existsById(stop.getId())).thenReturn(false);
+        when(stopRepository.existsById(stop.getId())).thenReturn(true);
 
         Throwable throwable = catchThrowable(() -> stopManagementUseCase.create(stop));
 

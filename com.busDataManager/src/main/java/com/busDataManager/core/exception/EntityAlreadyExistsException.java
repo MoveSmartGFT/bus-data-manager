@@ -1,8 +1,9 @@
 package com.busDataManager.core.exception;
 
+import lombok.Generated;
 import lombok.Getter;
 
-@Getter
+@Generated
 public class EntityAlreadyExistsException extends RuntimeException {
     private final String objectType;
     private final String id;
@@ -11,5 +12,13 @@ public class EntityAlreadyExistsException extends RuntimeException {
         super("%s with id %s already exists".formatted(objectType, id));
         this.objectType = objectType;
         this.id = id;
+    }
+
+    public String getObjectType() {
+        return objectType;
+    }
+
+    public String getId() {
+        return id;
     }
 }
