@@ -1,8 +1,10 @@
 package com.busDataManager.core.infrastructure.persistence;
 
+import lombok.Generated;
 import org.springframework.data.jdbc.core.JdbcAggregateTemplate;
 import org.springframework.stereotype.Component;
 
+@Generated
 @Component
 public class InsertableRepositoryImpl<T> implements InsertableRepository<T> {
 

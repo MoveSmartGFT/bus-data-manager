@@ -46,4 +46,8 @@ public class Stop {
      */
     @NotNull
     private AggregateReference<Route, String> routes;
+
+    public @Valid @NotBlank String getId() {
+        return id;
+    }
 }
