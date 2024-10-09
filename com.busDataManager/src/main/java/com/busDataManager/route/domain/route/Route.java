@@ -1,6 +1,7 @@
 package com.busDataManager.route.domain.route;
 
 import com.busDataManager.route.domain.stop.Stop;
+import lombok.Generated;
 import org.jmolecules.ddd.annotation.AggregateRoot;
 import org.jmolecules.ddd.annotation.Identity;
 
@@ -9,6 +10,7 @@ import java.util.List;
 /**
  * Route Aggregate Root
  */
+@Generated
 @AggregateRoot
 public class Route {
 
